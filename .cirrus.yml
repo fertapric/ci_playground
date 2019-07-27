@@ -1,0 +1,20 @@
+test_task:
+  container:
+    image: alpine
+
+  test_script:
+    - exit 1
+
+hello_task:
+  container:
+    image: alpine
+
+  test_script:
+    - exit 1
+
+wadus_task:
+  container:
+    image: alpine
+
+  test_script:
+    - exit
