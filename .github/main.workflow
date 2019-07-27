@@ -8,6 +8,6 @@ action "Email" {
   secrets = ["GITHUB_TOKEN", "MAIL_FROM", "MAIL_HOST", "MAIL_USERNAME", "MAIL_PASSWORD"]
   env = {
     APP_NAME = "Cirrus CI"
-    ELIXIR_CI_MAIL = "fernando.tapia@jobandtalent.com"
+    ELIXIR_CI_MAIL = "ci@elixir-lang.org"
   }
 }
