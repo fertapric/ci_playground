@@ -1,9 +1,9 @@
-workflow "Cirrus" {
+workflow "Cirrus CI email" {
   on = "check_suite"
-  resolves = ["Email"]
+  resolves = ["Send email"]
 }
 
-action "Email" {
+action "Send email" {
   uses = "docker://fertapric/elixir-ci-email:latest"
   secrets = ["GITHUB_TOKEN", "MAIL_FROM", "MAIL_HOST", "MAIL_USERNAME", "MAIL_PASSWORD"]
   env = {
