@@ -1,5 +1,5 @@
 on: check_suite
-name: Cirrus CI email
+name: CI email
 jobs:
   sendEmail:
     name: Send email
